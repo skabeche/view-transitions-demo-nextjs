@@ -8,7 +8,7 @@ export default function Template({ children }) {
     <>
       <Header />
       <ViewTransition>
-        <main className="flex items-center justify-center">
+        <main className="text-xl">
           {children}
         </main>
       </ViewTransition>

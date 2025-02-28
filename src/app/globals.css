@@ -5,16 +5,11 @@
 }
 
 body {
-  /* font-family: Arial, Helvetica, sans-serif; */
   @apply bg-white text-black;
 }
 
-main {
-  @apply text-xl;
-}
-
 h1 {
-  @apply text-9xl font-semibold;
+  @apply text-7xl xl:text-9xl py-6 font-bold uppercase;
 }
 
 a {
