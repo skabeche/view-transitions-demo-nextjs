@@ -9,7 +9,11 @@ body {
 }
 
 h1 {
-  @apply text-7xl xl:text-9xl py-6 font-bold uppercase;
+  @apply text-7xl xl:text-9xl my-6 font-bold uppercase leading-none;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+h2 {
+  @apply text-3xl my-2 font-bold leading-none text-gray-400;
 }
 
 a {
