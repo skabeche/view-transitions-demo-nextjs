@@ -31,11 +31,11 @@ export default function About() {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 gap-y-24 h-screen">
-      <div className="min-h-screen">
+    <div className="md:grid md:grid-cols-2 gap-y-0 md:gap-y-24 h-screen">
+      <div className="h-[50vh] md:min-h-screen pt-24 md:pt-0">
         <Image className="object-cover object-top w-full h-full" src="/spiral_staircase_portrait.jpg" alt="Stairs" width={800} height={500} />
       </div>
-      <div className="p-24">
+      <div className="p-8 md:p-12 md:pt-24 lg:p-24">
         <h1 ref={header1Ref}>About</h1>
         <p ref={textRef}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eligendi vel tempore eaque magnam dignissimos suscipit, consequatur aperiam nam recusandae quae, amet omnis in sapiente, eius alias inventore culpa esse.</p>
       </div>
