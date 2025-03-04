@@ -7,8 +7,8 @@ export default function Template({ children }) {
   return (
     <>
       <Header />
-      <ViewTransition>
-        <main className="text-xl">
+      <ViewTransition name="content">
+        <main className="text-xl" style={{ viewTransitionName: "content" }}>
           {children}
         </main>
       </ViewTransition>

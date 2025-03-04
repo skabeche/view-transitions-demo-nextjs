@@ -30,7 +30,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container flex flex-col items-center justify-center h-screen mx-auto">
+    <div className="container flex flex-col items-center justify-center h-screen">
       <h1 ref={header1Ref} className="!mb-0">Dan Alcaide</h1>
       <h2 ref={header2Ref}>View Transitions Demo</h2>
     </div>

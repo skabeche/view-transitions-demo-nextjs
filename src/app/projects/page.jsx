@@ -31,7 +31,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="container flex flex-col items-center justify-center gap-4 py-[20vh] mx-auto">
+    <div className="container flex flex-col items-center justify-center gap-4 py-[20vh]">
       <h1 ref={header1Ref}>Projects</h1>
       <div ref={projectsRef} className="projects flex flex-col gap-4">
         <Image src="/spiral_stairs.jpg" alt="Stairs" width={800} height={500} />
