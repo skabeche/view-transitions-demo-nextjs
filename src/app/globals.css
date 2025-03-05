@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  @apply text-5xl md:text-7xl xl:text-9xl my-6 font-bold uppercase leading-none;
+  @apply text-5xl md:text-7xl xl:text-8xl mb-6 font-bold uppercase leading-none;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 h2 {

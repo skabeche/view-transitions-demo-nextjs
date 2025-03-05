@@ -1,5 +1,3 @@
-'use client'
-
 import { unstable_ViewTransition as ViewTransition } from "react"
 import Header from "./partials/header"
 
@@ -8,7 +6,7 @@ export default function Template({ children }) {
     <>
       <Header />
       <ViewTransition name="content">
-        <main className="text-xl" style={{ viewTransitionName: "content" }}>
+        <main className="text-xl">
           {children}
         </main>
       </ViewTransition>
