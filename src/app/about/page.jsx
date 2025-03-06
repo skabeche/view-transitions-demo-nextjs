@@ -11,7 +11,11 @@ export default function About() {
       <div className="p-8 md:p-12 md:pt-24 lg:p-24">
         <Heading>About</Heading>
         <RichContent>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eligendi vel tempore eaque magnam dignissimos suscipit, consequatur aperiam nam recusandae quae, amet omnis in sapiente, eius alias inventore culpa esse.</p>
+          <h2>View transition demo</h2>
+          <p>This proof of concept made with Next.js 15 demonstrates the use of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API">View Transition API</a> along with the experimental <a href="https://react.dev/reference/react/useTransition">View Transition Component</a> in React 19.</p>
+          <p>Please note that it is not currently supported in Firefox. <a href="https://caniuse.com/view-transitions">Check browser compatibility</a> for more details.</p>
+          <p>Additionally, it utilizes <a href="https://gsap.com">GSAP library</a> to animate elements on the page.</p>
+          <p>The <a href="https://github.com/skabeche/view-transitions-demo-nextjs">source code</a> is available on my GitHub profile.</p>
         </RichContent>
       </div>
     </div>

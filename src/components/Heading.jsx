@@ -11,8 +11,8 @@ export default function Heading({ children, level = 1, className = '' }) {
   const Tag = `h${level}`;
   const levels = {
     1: "text-4xl md:text-7xl xl:text-8xl mb-2 font-bold uppercase leading-none [clip-path:_polygon(0_0,_100%_0,_100%_100%,_0_100%)] [font-kerning:_none]",
-    2: "text-2xl md:text-3xl my-2 font-bold leading-none text-gray-400",
-    3: "text-2xl font-semibold text-gray-400",
+    2: "text-xl md:text-3xl my-2 font-bold leading-none text-gray-400",
+    3: "text-xl font-semibold text-gray-400",
     4: "text-xl font-medium text-gray-400",
     5: "text-lg text-gray-400",
     6: "text-base text-gray-400",

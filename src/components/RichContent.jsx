@@ -28,7 +28,7 @@ export default function RichContent({ children }) {
   }, []);
 
   return (
-    <div className="rich-content prose lg:prose-xl prose-h1:[font-kerning:_none] prose-h2:text-gray-400 prose-p:[font-kerning:_none]">
+    <div className="rich-content text-pretty prose lg:prose-xl prose-h1:[font-kerning:_none] prose-h2:text-gray-400 prose-p:[font-kerning:_none]">
       {children}
     </div>
   );

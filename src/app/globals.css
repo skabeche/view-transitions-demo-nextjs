@@ -11,7 +11,7 @@
 }
 
 a {
-  @apply hover:text-gray-600 transition-all;
+  @apply hover:text-gray-600 transition-all no-underline;
 }
 
 /* View Transition */
