@@ -8,8 +8,9 @@ gsap.registerPlugin(useGSAP);
 
 export default function Heading({ children, level = 1, className = '' }) {
   const headerRef = useRef(null);
+  const Tag = `h${level}`;
   const levels = {
-    1: "text-5xl md:text-7xl xl:text-8xl mb-6 font-bold uppercase leading-none [clip-path:_polygon(0_0,_100%_0,_100%_100%,_0_100%)]",
+    1: "text-4xl md:text-7xl xl:text-8xl mb-2 font-bold uppercase leading-none [clip-path:_polygon(0_0,_100%_0,_100%_100%,_0_100%)] [font-kerning:_none]",
     2: "text-2xl md:text-3xl my-2 font-bold leading-none text-gray-400",
     3: "text-2xl font-semibold text-gray-400",
     4: "text-xl font-medium text-gray-400",
@@ -21,11 +22,11 @@ export default function Heading({ children, level = 1, className = '' }) {
     if (level !== 1 && level !== 2) return;
 
     if (level === 1) {
-      const header = new SplitType(headerRef.current, { types: 'chars' })
+      const header = new SplitType(headerRef.current, { types: 'words, chars' })
       gsap.from(header.chars, {
         y: 200,
         stagger: 0.075,
-        duration: .6,
+        duration: .5,
         ease: 'power4.out',
         delay: .5,
       });
@@ -42,8 +43,6 @@ export default function Heading({ children, level = 1, className = '' }) {
     }
 
   }, []);
-
-  const Tag = `h${level}`;
 
   return <Tag ref={headerRef} className={`${levels[level]} ${className}`}>{children}</Tag>;
 }
