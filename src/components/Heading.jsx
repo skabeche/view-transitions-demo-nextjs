@@ -22,11 +22,11 @@ export default function Heading({ children, level = 1, className = '' }) {
     if (level !== 1 && level !== 2) return;
 
     if (level === 1) {
-      const header = new SplitType(headerRef.current, { types: 'words, chars' })
-      gsap.from(header.chars, {
+      const header = new SplitType(headerRef.current, { types: 'words' })
+      gsap.from(header.words, {
         y: 200,
-        stagger: 0.075,
-        duration: .5,
+        stagger: 0.15,
+        duration: 1.2,
         ease: 'power4.out',
         delay: .5,
       });
